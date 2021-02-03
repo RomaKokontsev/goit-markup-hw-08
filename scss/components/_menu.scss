@@ -27,7 +27,7 @@
 .header-menu{
     background-color: #ffffff;
            
-    @media screen and (max-width:767px){
+    @media screen and (min-width:480px) and (max-width:767px){
         display: none;
         position: absolute;
         top: 0;
@@ -56,16 +56,20 @@
             letter-spacing: 0.02em;
         
             color: $mainColor;
+
+            &:hover,
+            &:focus{
+                color: $accentColor;
+            }
         }
         & .item:not(:last-child){
             margin-bottom: 32px;
         }
         & .nav-contact{
             margin-top: 306px;
-            @media screen and (max-width:767px) {
-                display: flex;
-                flex-direction: column-reverse;
-            }
+            display: flex;
+            flex-direction: column-reverse;
+           
         }
         & .tel-link{
             display: block;
@@ -90,6 +94,8 @@
         & .menu-social{
             display: flex;
             margin-top: 64px;
+
+           
         }
         & .menu-social-link{
             margin-right: 10px;
@@ -110,7 +116,78 @@
         
     }
 
+   
+}
+.header-menu{
     @media screen and (min-width:768px) {
         display: flex ;
+        align-items: center;
+
+        .nav-links{
+            display: flex;
+            padding: 0px;
+            justify-content: center;
+
+            .item{
+                position: relative;
+            }
+        
+            .item:not(:last-child){
+                margin-right: 50px;
+            }
+        }
+        .nav-link{
+            
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            color: $mainColor;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.current{
+            color: $accentColor;
+        }
+        .nav-contact{
+            margin-left: 84px;
+            padding: 0px;
+
+            .contact-link{
+                color: $secColor;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.16;
+                letter-spacing: 0.02em;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:hover,
+                &:focus{
+                    color: $accentColor;
+                }
+                .email-icon{
+                    width: 14px;
+                    height: 10px;
+                    margin-right: 8px;
+                    fill: currentcolor;  
+                }
+                .tel-icon{
+                    width: 10px;
+                    height: 14px;
+                    margin-right: 8px;
+                    fill: currentcolor;
+                }
+            }
+        }
+        
+
+        .menu-social{
+            display: none; 
+        }
     }
 }
