@@ -1,40 +1,23 @@
 .strengths-plus{
-    padding-top: 94px;
-}
-.strengths{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section-title{
-    margin-bottom: 50px;
-    
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}    
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+}
 .strengths-container{
-    display: flex;
     padding: 0px;
-
-    
-    .strengths-list:not(:last-child){
-        margin-right: 30px;
-    }
 }
 .strengths-item{
-    width: 270px;
+    width: 450px;
 
     &:not(:last-child){
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
+
     .strengths-icon{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-color: #F5F4FA;
         margin-bottom: 30px; 
@@ -47,14 +30,32 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
     }
     .strengths-text{
         color: $secColor ;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+              
     }
 }
+.strengths{
+    display: none;
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+   
+}
+.section-title{
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}    
 .product{
     display: flex;
     position: relative;
@@ -83,5 +84,6 @@
         text-transform: uppercase;
         color: #ffffff;
     }
+
 
 }
