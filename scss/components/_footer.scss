@@ -1,5 +1,8 @@
 .footer-part{
     text-align: center;
+
+   
+    
     
     address{
         margin-bottom: 8px;
@@ -10,6 +13,14 @@
         line-height: 1.71;
         letter-spacing: 0.03em; 
     }
+}
+
+.table-container{
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
 .nav-footer{
     
@@ -44,6 +55,11 @@
 }
 .social-footer{
     margin-top: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 0px;
+        margin-left: 165px;
+    }
    
 }
 
@@ -98,6 +114,8 @@
     margin-top: 60px;
     
 
+    
+
     .footer-label{
         display: flex;
         justify-content: center;
@@ -132,6 +150,16 @@
         &::placeholder{
             color:   rgba(255, 255, 255, 0.6);
         }
+
+        @media screen and (min-width:768px) {
+            width: 450px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            
+        }
+
+
     }
     .footer-button{
         display: inline-flex;
