@@ -23,6 +23,7 @@ footer{
  ul,
  p{
      margin: 0;
+     padding: 0;
  }
  img{
      display: block;
@@ -62,6 +63,14 @@ footer{
     @media screen and (max-width:767px) {
         background-color: #ffffff;
     }
+    @media screen and (min-width:768px) {
+        bottom: -32px;
+    }
+    // @media screen and (min-width:1200px) {
+    //     bottom: -36px;
+    // }
+
+
 }
  .visually-hidden{
      position: absolute;

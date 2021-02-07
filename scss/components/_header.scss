@@ -1,13 +1,18 @@
-.header > .container{
-    display: flex;
-    align-items: center;
+.header {
+   display: flex;
+   
+    
     
     @media screen and (min-width:480px) {
-        padding: 16px 15px 16px 15px;
+        padding: 16px 0 16px 0;
     }
 
     @media screen and (min-width:768px) {
-        padding: 0 15px 0 15px;
+        padding: 21px 0 21px 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 25px 0 25px 0;
     }
 }
 
