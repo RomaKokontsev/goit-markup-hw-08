@@ -2,6 +2,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 .strengths-container{
     padding: 0px;
@@ -10,31 +15,39 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+        margin-right: -30px;
+
+        .strengths-list:not(:last-child){
+            margin-right: 30px;
+        }
         
     }
    
 
 }
 .strengths-item{
-    width: 450px;
+    // width: 450px;
 
-    @media screen and (min-width:768px) {
-        width: 354px;
-
-        &:nth-child(2n+1){
-            margin-right: 30px;
-        }
-        &:nth-child(3){
-            margin-top: 30px;
-        }
-        &:nth-child(4){
-            margin-top: 30px;
-        }
-    }
+    
     @media screen and (max-width:767px) {
         &:not(:last-child){
             margin-bottom: 30px;
         }
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;
+        width: calc((100% - 30px) / 2);
+        margin-right: 15px;
+       
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+          
+      
     }
 
    
@@ -43,7 +56,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 450px;
+        // width: 450px;
         height: 120px;
         background-color: #F5F4FA;
         margin-bottom: 30px; 
@@ -51,13 +64,18 @@
         @media screen and (min-width:768px) {
             width: 354px;
         }
+        @media screen and (min-width:1200px) {
+            width: 270px;
+            
+               
+        }
     }
     .strengths-title{
         margin-bottom: 10px;
 
         font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
@@ -74,6 +92,7 @@
     display: none;
     @media screen and (min-width:1200px) {
         display: block;
+        padding-bottom: 94px;
     }
    
 }
