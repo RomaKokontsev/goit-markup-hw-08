@@ -3,6 +3,8 @@
 
     @media screen and (min-width:1200px) {
         display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
 
    
@@ -23,6 +25,11 @@
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: space-evenly;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        // justify-content: space-evenly;
+        align-items: baseline;
     }
     
 }
@@ -60,9 +67,13 @@
 .social-footer{
     margin-top: 60px;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px)  {
         margin-top: 0px;
         margin-left: 165px;
+    }
+    @media screen and (min-width:1200px)  {
+        margin-top: 0px;
+        margin-left: 70px;
     }
    
 }
@@ -115,17 +126,22 @@
     }
 }
 .footer-form{
-    margin-top: 60px;
-    
-
-    
+    @media screen and (max-width:1199px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        
+        form{
+            display: flex;
+        }
+    }
+   
+       
 
     .footer-label{
         display: flex;
         justify-content: center;
-
         margin-bottom: 20px;
-    
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -133,8 +149,11 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
         color: #FFFFFF;
+
+        @media screen and (min-width:1200px) {
+            justify-content: flex-start;
+        }
     }
     .footer-input{
         margin-bottom: 20px;
@@ -160,6 +179,13 @@
             display: block;
             margin: 0 auto;
             margin-bottom: 20px;
+            
+        }
+        @media screen and (min-width:768px) {
+            width: 358px;
+            display: inline-flex;
+            margin-bottom: 0;
+            margin-right: 12px;
             
         }
 
