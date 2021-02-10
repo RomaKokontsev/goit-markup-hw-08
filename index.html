@@ -45,13 +45,13 @@
                     </li>
                 </ul>
                 <ul class="menu-social">
-                    <li> <a class="menu-social-link">Instagram</a> </li>
+                    <li class="menu-social-link">  <a >Instagram</a> </li>
                     
-                    <li> <a class="menu-social-link">Twitter</a> </li>
+                    <li class="menu-social-link"> <a >Twitter</a> </li>
                     
-                    <li> <a class="menu-social-link">Facebook</a> </li>
+                    <li class="menu-social-link"> <a >Facebook</a> </li>
                     
-                    <li> <a class="menu-social-link">LinkedIn</a> </li>
+                    <li class="menu-social-link"> <a >LinkedIn</a> </li>
                 </ul>
             </div>
             <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="header-menu" data-menu-button>
@@ -130,7 +130,15 @@
                 <ul class="strengths-container" >
                     <li class="strengths-list" > 
                         <div class="product">
-                            <img class="strengths-img"  src="./images/images1.jpg" alt="Програмист пишет код">
+                            <!-- <img class="strengths-img"  src="./images/images1.jpg" alt="Програмист пишет код"> -->
+                            <picture >
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/studio/img-1.webp 1x, ./images/studio/img-1@2x.webp 2x" type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/studio/img-1.jpg 1x, ./images/studio/img-1@2x.jpg 2x">
+                            
+                                <img class="strengths-img" src="./images/studio/img-1.jpg" alt="Програмист пишет код">
+                            </picture>
                             <div class="product-title">
                                 <h3 class="strengths-img-title">Десктопные приложения</h3>
                             </div> 
@@ -140,7 +148,14 @@
                     </li>
                     <li class="strengths-list" >
                         <div class="product">
-                            <img class="strengths-img" src="./images/img2.jpg" alt="Дизайнер разрабатывает дизайн для мобильного приложения">
+                            <!-- <img class="strengths-img" src="./images/img2.jpg" alt="Дизайнер разрабатывает дизайн для мобильного приложения"> -->
+                            <picture >
+                                <source media="(min-width: 1200px)" srcset="./images/studio/img-2.webp 1x, ./images/studio/img-2@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/studio/img-2.jpg 1x, ./images/studio/img-2@2x.jpg 2x">
+                            
+                                <img class="strengths-img" src="./images/studio/img-2.jpg" alt="Дизайнер разрабатывает дизайн для мобильного приложения">
+                            </picture>
                             <div class="product-title">
                                 <h3 class="strengths-img-title">Мобильные приложения</h3> 
                             </div>
@@ -150,7 +165,14 @@
                     </li>
                     <li class="strengths-list" > 
                         <div class="product">
-                            <img class="strengths-img" src="./images/img3.jpg" alt="Дизайнер выбирает цветовоу гамму проекта">
+                            <!-- <img class="strengths-img" src="./images/img3.jpg" alt="Дизайнер выбирает цветовоу гамму проекта"> -->
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="./images/studio/img-3.webp 1x, ./images/studio/img-3@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/studio/img-3.jpg 1x, ./images/studio/img-3@2x.jpg 2x">
+                            
+                                <img class="strengths-img" src="./images/studio/img-3.jpg" alt="Дизайнер выбирает цветовоу гамму проекта">
+                            </picture>
                             <div class="product-title">
                                 <h3 class="strengths-img-title">Дизайнерские решения</h3>
                             </div> 
@@ -169,7 +191,32 @@
                 <h2 class="section-team"> Наша команда</h2>
                 <ul class="team-container" >
                     <li class="team-person">
-                        <a href=""> <img class="photo-person" src="./images/img4.jpg" alt="Product Designer" ></a>
+                        <!-- <a href=""> <img class="photo-person" src="./images/img4.jpg" alt="Product Designer" ></a> -->
+                        <picture>
+                            <source
+                             media="(min-width: 1200px)" 
+                             srcset="./images/studio/team1-desk.webp 1x, ./images/studio/team1-desk@2x.webp 2x" 
+                             type="image/webp">
+                            <source
+                            media="(min-width: 1200px)" 
+                            srcset="./images/studio/team1-desk.jpg 1x, ./images/studio/team1-desk@2x.jpg 2x">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/studio/team1-tabl.webp 1x, ./images/studio/team1-tabl@2x.webp 2x"
+                                type="image/webp">
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./images/studio/team1-tabl.jpg 1x, ./images/studio/team1-tabl@2x.jpg 2x">
+                            <source 
+                            media="(min-width: 480px)" 
+                            srcset="./images/studio/team1.webp 1x, ./images/studio/team1@2x.webp 2x"
+                                type="image/webp">
+                            <source 
+                            media="(min-width: 480px)" 
+                            srcset="./images/studio/team1.jpg 1x, ./images/studio/team1@2x.jpg 2x">
+                            
+                            <img class="photo-person" src="./images/studio/team1.jpg" alt="Product Designer">
+                       </picture>
                         <div class="person-info">
                             <h3 class="person-name"> Игорь Демьяненко </h3>
                         <p class="profession" > Product Designer </p>
@@ -207,7 +254,21 @@
                         
                     </li>
                     <li class="team-person">
-                        <a href=""> <img class="photo-person" src="./images/img5.jpg" alt="Frontend Developer" ></a>
+                        <!-- <a href=""> <img class="photo-person" src="./images/img5.jpg" alt="Frontend Developer" ></a> -->
+                        <picture >
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team2-desk.webp 1x, ./images/studio/team2-desk@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team2-desk.jpg 1x, ./images/studio/team2-desk@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/studio/team2-tabl.webp 1x, ./images/studio/team2-tabl@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/studio/team2-tabl.jpg 1x, ./images/studio/team2-tabl@2x.jpg 2x">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team2.webp 1x, ./images/studio/team2@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team2.jpg 1x, ./images/studio/team2@2x.jpg 2x">
+                        
+                            <img class="photo-person" src="./images/studio/team2.jpg" alt="Frontend Developer">
+                        </picture>
                         <div class="person-info">
                             <h3 class="person-name"> Ольга Репина </h3>
                         <p class="profession" > Frontend Developer </p>
@@ -245,7 +306,21 @@
                         
                     </li>
                     <li class="team-person">
-                        <a href=""> <img class="photo-person" src="./images/img6.jpg" alt="Marketing" ></a>
+                        <!-- <a href=""> <img class="photo-person" src="./images/img6.jpg" alt="Marketing" ></a> -->
+                        <picture">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team3-desk.webp 1x, ./images/studio/team3-desk@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team3-desk.jpg 1x, ./images/studio/team3-desk@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/studio/team3-tabl.webp 1x, ./images/studio/team3-tabl@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/studio/team3-tabl.jpg 1x, ./images/studio/team3-tabl@2x.jpg 2x">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team3.webp 1x, ./images/studio/team3@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team3.jpg 1x, ./images/studio/team3@2x.jpg 2x">
+                        
+                            <img class=""photo-person" src="./images/studio/team3.jpg" alt="Marketing">
+                        </picture>
                         <div class="person-info">
                             <h3 class="person-name"> Николай Тарасов </h3>
                         <p class="profession" > Marketing </p>
@@ -283,7 +358,21 @@
                         
                     </li>
                     <li class="team-person">
-                        <a href=""> <img class="photo-person" src="./images/img7.jpg" alt="UI Designer" ></a>
+                        <!-- <a href=""> <img class="photo-person" src="./images/img7.jpg" alt="UI Designer" ></a> -->
+                        <picture >
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team4-desk.webp 1x, ./images/studio/team4-desk@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/team4-desk.jpg 1x, ./images/studio/team4-desk@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/studio/team4-tabl.webp 1x, ./images/studio/team4-tabl@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/studio/team4-tabl.jpg 1x, ./images/studio/team4-tabl@2x.jpg 2x">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team4.webp 1x, ./images/studio/team4@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 480px)" srcset="./images/studio/team4.jpg 1x, ./images/studio/team4@2x.jpg 2x">
+                        
+                            <img class="photo-person" src="./images/studio/team4.jpg" alt="UI Designer">
+                        </picture>
                         <div class="person-info">
                             <h3 class="person-name"> Михаил Ермаков </h3>
                         <p class="profession" > UI Designer </p>

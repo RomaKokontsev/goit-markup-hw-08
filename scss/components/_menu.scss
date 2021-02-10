@@ -40,6 +40,7 @@
     }
             
     .header-menu{
+        z-index: 1;
         display: none;
         position: absolute;
         top: 0;
@@ -115,17 +116,31 @@
             line-height: 1.22;
             letter-spacing: 0.02em;
             color: $accentColor;
+            // border: 1px solid rgba(33, 33, 33, 0.2);
+
+            // &:not(:last-child) {
+            //     border-right-width: 1px;
+            //     border-right-style: solid;
+            //     border-right-color:  rgba(33, 33, 33, 0.2);
+            //     margin-right: 10px;
+            //     padding-right: 10px;
+            // }
+            
+
                    
             &::after {
                 content: "";
                 width: 22px;
                 height: 0px;
                 border: 1px solid rgba(33, 33, 33, 0.2);
+                
                 transform: rotate(90deg);
                 align-items: center;
                 margin: 0 10px;
                 
             }
+            
+            
             
         }
         

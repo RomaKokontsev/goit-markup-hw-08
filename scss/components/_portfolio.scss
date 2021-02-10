@@ -19,6 +19,11 @@
     flex-wrap: wrap;
     padding: 0px;
 
+    @media screen and (max-width:767px) {
+        margin-bottom: -15px;
+    }
+    
+
     @media screen and (min-width:768px) {
         justify-content: center;
     }
@@ -74,11 +79,11 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+        
         margin-top: 0;
         margin-right: -30px;
         margin-bottom: -30px;
-        
-        
+              
     }
 
     a{
@@ -86,33 +91,28 @@
     }
 }
 .work-project{
+    
+    margin-bottom: 30px;
+    max-width: 450px;
+    border: 1px solid #eeeeee;
    
-    @media screen and (min-width:480px) and (max-width:767px) {
-        &:nth-child(-n + 8){
-            margin-bottom: 30px;
-            
-        }
-    }
-           
-    @media screen and (min-width:768px) and (max-width:1199px) {
+         
+    @media screen and (min-width:768px)  {
        
-        width: calc(100% / 2 - 30px);
+        width: calc((100% - 60px) / 2);
         margin-right: 30px;
-        margin-bottom: 30px;
-               
-        
+                  
     }
 
     @media screen and (min-width:1200px) {
-        width: calc((100% - 60px) / 3);
-        margin-right: 30px;
-
-        &:nth-child(-n + 6){
-            margin-bottom: 30px;
-        }
-        &:nth-child(3n){
-            margin-right: 0px;
-        }
+        width: calc((100% - 90px) / 3);
+        
+        // &:nth-child(-n + 6){
+        //     margin-bottom: 30px;
+        // }
+        // &:nth-child(3n){
+        //     margin-right: 0px;
+        // }
     
       
     }
@@ -162,9 +162,8 @@
     
 
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
     border-top-width: 0px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     
     
 

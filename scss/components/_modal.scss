@@ -1,30 +1,43 @@
 .backdrop{
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);    
+    overflow-y: scroll;
+    // width: 100%;
+    // height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 93px 15px;  
 }
 .modal{
     position: absolute;
-    width: 450px;
-    height: 609px;
+    z-index: 1;
+    max-width: 450px;
+    width: 100%;
+    
+          
+    // min-height: 609px;
     left: 50%;
     top: 50%;
+    padding: 40px 40px;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    
 
     @media screen and (min-width:1200px) {
-        width: 528px;
-        height: 581px;
+        max-width: 528px;
+        // height: 581px;
     }
 }
 .modal-button{
     position: absolute;
     right: 0;
+    top: 0;
     margin-top: 8px;
     margin-right: 8px;
     width: 30px;
@@ -43,23 +56,17 @@
     &:focus{
         color: $accentColor; 
     }
+
+    
 }
 .form-modal{
-    padding: 40px 40px;
-    width: 450px;
-    height: 609px;
-
-    @media screen and (min-width:1200px) {
-        width: 528px;
-        height: 581px;
-    }
-
+         
     p{
         margin-bottom: 12px;
     
-        font-weight: 500;
+        font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
     
@@ -175,7 +182,9 @@
         color: $secColor;
 
         @media screen and (min-width:1200px) {
-            margin-left: 36px; 
+            margin-left: 36px;
+            font-size: 14px;
+            line-height: 1.71; 
         }
        
     }
