@@ -199,6 +199,7 @@ img {
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
+    padding-right: 40px;
   }
   .header-menu.is-open {
     display: block;
