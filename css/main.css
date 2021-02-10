@@ -773,22 +773,6 @@ img {
   }
 }
 
-.team-container .photo-person {
-  width: 450px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-container .photo-person {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-container .photo-person {
-    width: 270px;
-  }
-}
-
 .team-container .person-info {
   padding-top: 30px;
   padding-bottom: 30px;
