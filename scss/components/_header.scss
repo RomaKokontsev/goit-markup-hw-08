@@ -1,11 +1,9 @@
 .header {
-   display: flex;
-   
+//    display: flex;
+   padding-top: 16px;
+   padding-bottom: 16px;
+        
     
-    
-    @media screen and (min-width:480px) {
-        padding: 16px 0 16px 0;
-    }
 
     @media screen and (min-width:768px) {
         padding: 21px 0 21px 0;
