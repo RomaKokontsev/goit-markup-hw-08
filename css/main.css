@@ -646,6 +646,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .strengths-item .strengths-title {
+    text-align: left;
+  }
+}
+
 .strengths-item .strengths-text {
   color: #757575;
   font-size: 14px;
@@ -733,6 +739,14 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    font-size: 42px;
+    line-height: 1.31;
+    margin-bottom: 50px;
+  }
 }
 
 .team-container {
@@ -861,6 +875,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients .section-title {
+    margin-bottom: 50px;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,6 +971,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: left;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

@@ -26,7 +26,7 @@
 
 }
 .strengths-item{
-    // width: 450px;
+    
 
     
     @media screen and (max-width:767px) {
@@ -79,6 +79,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
+
+        @media screen and (min-width:768px) {
+            text-align: left;
+        }
     }
     .strengths-text{
         color: $secColor ;
